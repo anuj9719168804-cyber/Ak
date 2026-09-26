@@ -1,0 +1,23 @@
+# --- Web framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# --- diskwala.py's own dependencies ---
+requests>=2.32.2,<3
+beautifulsoup4==4.12.3
+cryptography==42.0.8
+python-dotenv==1.0.0
+
+# --- cf_bypass.py's Cloudflare-challenge solving tiers (all optional;
+#     cf_bypass fails soft and just uses plain `requests` if these
+#     aren't installed) ---
+curl_cffi>=0.10,<0.14
+cloudscraper==1.2.71
+# FlareSolverr itself is a separate Docker container / service, not a
+# pip package — see cf_bypass.py's FLARESOLVERR_URL. Point it at an
+# existing FlareSolverr instance, or leave it unset to skip that tier.
+
+# --- Optional: Telethon USER-session token-API tier (diskwala.py's
+#     get_auth_token_sync()). Safe to leave out entirely — diskwala.py
+#     catches ImportError and just skips straight to the no-auth tiers. ---
+# telethon==1.34.0
