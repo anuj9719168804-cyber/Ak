@@ -17,7 +17,10 @@ cloudscraper==1.2.71
 # pip package — see cf_bypass.py's FLARESOLVERR_URL. Point it at an
 # existing FlareSolverr instance, or leave it unset to skip that tier.
 
-# --- Optional: Telethon USER-session token-API tier (diskwala.py's
-#     get_auth_token_sync()). Safe to leave out entirely — diskwala.py
-#     catches ImportError and just skips straight to the no-auth tiers. ---
-# telethon==1.34.0
+# --- Telethon USER-session token-API tier (diskwala.py's
+#     get_auth_token_sync()) — enabled: this is the tier that hits
+#     api2.diskwala.net directly with a bearer token instead of scraping
+#     the Cloudflare-protected diskwala.net pages, so it's the one tier
+#     that can actually resolve links without a working CF-challenge
+#     solver (FlareSolverr) running alongside this service. ---
+telethon==1.34.0
