@@ -100,7 +100,6 @@ async def meta(url: str = Query(..., description="Diskwala share link")):
             "creator": "Diskwala API",
             "data": {
                 "title": info.get("title"),
-                "author": info.get("author"),
                 "duration_seconds": info.get("duration"),
                 "thumbnail": info.get("poster_url"),
                 "size_bytes": info.get("file_size"),
@@ -191,7 +190,6 @@ async def resolve(
     data = {
         # Requested Diskwala metadata response
         "title": page_info.get("title") or info.get("title") or name,
-        "author": page_info.get("author") or info.get("author"),
         "duration_seconds": page_info.get("duration") or info.get("duration"),
         "thumbnail": thumbnail,
         "size_bytes": size_bytes,
