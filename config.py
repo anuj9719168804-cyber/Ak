@@ -7,7 +7,12 @@ load_dotenv()
 # Optional Telegram USER session for Diskwala's authenticated token-API tier.
 API_ID = int(os.getenv("API_ID", "20432885"))
 API_HASH = os.getenv("API_HASH", "4fdcfab1c7f5e24ae69f3ce6bb234dec")
-SESSION = os.getenv("SESSION", "1BVtsOIUBu1p95DBVItZu_9cKP7_1aJJl9f-sDqeHr4tpVwV3H1XsaQL8U9vKbH_fhf6ov-NBS9MfMykioaeD2vF8ExH7pOkqQ6NQ9klIWi1p4BzCj8Og5VTKUMW6s2tPhjscwH_wSw3zdg6HqEagS7xPihenm71vj-lWo85xGY_wx6vYg8fjoNF_iPO3cWrHdZOMGMZXW6MPPvk4bRF8HodXC8guvQOhFyLmFUvI2irIvpgZCDBRK-oMLMtXKeQxNdSKAii_0ksWA1turWSR6DJLaLT-mslLtQMZFZWolMhkY4zw1AbSnXXGsTUwMW_2w8EEi2MMVMMaF4dIvbWiFnO9npEtj0k=")
+SESSION = os.getenv("SESSION", "1AZWarzcBu61nyfLZEDg3AIqwNSoq8a22imtuARpbl8g9jknAv-kml_zvbKhELisWFLtE
+AktSu9kLfw8wQz_d1dgM1_EkjH6nva5a73d7QL8fSWQrCjoL7o5SB7L0UeoDrDPvSCG98
+0uj3DYY5oM7CJCe7I46FGxg2Y3eW6J_rdgahUa8dGjY4p1IZyLzNL8cLapFeSPdTSs3jl
+-6C-cBarhuEr3m1AMsshCfqF9dlOKD4b8X2Vv9jyFUsuPp3g5Wb2BvIsM4kqsfOc9rfj9
+FgwLrdIqawfFA3Q_O48x4sWKvkSPFkVa9Dyc1Xggn-gNRcxr7WEHyiYhRXP2SWn0zE8Eg
+8IDV8sQ=")
 
 
 # Per-IP request limit.
